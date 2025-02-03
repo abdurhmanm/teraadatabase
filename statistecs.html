@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إحصائيات المنصة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .stats-section {
+            background: linear-gradient(135deg, #0043a5, #002f6c);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin: 40px auto;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .stats-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #f9f9f9;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            position: relative;
+            text-align: center;
+            margin: 15px;
+        }
+
+        .stat-item h3 {
+            font-size: 36px;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .stat-item p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #e0f7ff;
+        }
+
+        .stat-item .arrow {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-45deg);
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0043a5;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .stat-item .arrow::after {
+            content: "↑";
+            position: absolute;
+            top: 12px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="stats-section">
+        <h2>إحصائيات منصتنا</h2>
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="arrow"></div>
+                <h3>327+</h3>
+                <p>عدد الأعضاء</p>
+            </div>
+            <div class="stat-item">
+                <div class="arrow"></div>
+                <h3>20+</h3>
+                <p>عدد الفعاليات</p>
+            </div>
+            <div class="stat-item">
+                <div class="arrow"></div>
+                <h3>99%+</h3>
+                <p>نسبة الرضاء</p>
+            </div>
+            <div class="stat-item">
+                <div class="arrow"></div>
+                <h3>15+</h3>
+                <p>عدد اللجان</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

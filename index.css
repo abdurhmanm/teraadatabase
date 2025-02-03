@@ -1,0 +1,565 @@
+/* تنسيق عام */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    background: linear-gradient(135deg, #003b73, #1c658c);
+    color: #fcfcfc;
+}
+
+/* شريط التنقل */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.navbar .btn-register {
+    background-color: #ffffff;
+    color: rgb(247, 244, 244);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.navbar .btn-register:hover {
+    background-color: #c93636;
+}
+
+/* العنوان الرئيسي */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #000000; /* لون بنفسجي */
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #000000;
+}
+
+/* معرض الصور */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container .images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-container img {
+    width: 300px;
+    height: 200px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.carousel-container .prev-btn,
+.carousel-container .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0a71eeef;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.carousel-container .prev-btn {
+    left: -20px;
+}
+
+.carousel-container .next-btn {
+    right: -20px;
+}
+
+.carousel-container .prev-btn:hover,
+.carousel-container .next-btn:hover {
+    background-color: #fdfafa;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.register-btn i {
+    margin-left: 5px;
+
+}
+
+
+
+.btn {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: rgb(0, 0, 0);
+  --btn-bg-2: rgb(13, 67, 155);
+  --btn-bg-color: rgb(255, 255, 255);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 1em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow:
+    0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn:hover {
+  background-position: right top;
+}
+
+.btn:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow:
+    0 0 3px var(--btn-bg-color),
+    0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: linear;
+  }
+}
+body {
+  position: relative; /* ضمان التحكم في موقع العناصر */
+  min-height: 100vh; /* لضمان تغطية الصفحة بالكامل */
+  margin: 0; /* إزالة أي مسافات افتراضية */
+  background-color: #f4f4f4; /* لون الخلفية (اختياري) */
+}
+.btn {
+  position: absolute;
+  top: var(--btn-top, 17px); /* تحكم في المسافة من الأعلى */
+  left: var(--btn-left,27cm); /* تحكم في المسافة من اليسار */
+  transform: translate(100%, 6%); /* لضمان المحاذاة المثالية */
+}
+
+.communication-btn {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: rgb(0, 0, 0);
+  --btn-bg-2: rgb(13, 67, 155);
+  --btn-bg-color: rgb(255, 255, 255);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 1em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow:
+    0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.communication-btn:hover {
+  background-position: right top;
+}
+
+.communication-btn:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow:
+    0 0 3px var(--btn-bg-color),
+    0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .communication-btn {
+    transition: linear;
+  }
+}
+body {
+  position: relative; /* ضمان التحكم في موقع العناصر */
+  min-height: 100vh; /* لضمان تغطية الصفحة بالكامل */
+  margin: 0; /* إزالة أي مسافات افتراضية */
+  background-color: #f4f4f4; /* لون الخلفية (اختياري) */
+}
+.communication-btn {
+  position: absolute;
+  top: var(--btn-top, 17px); /* تحكم في المسافة من الأعلى */
+  left: var(--btn-left,21cm); /* تحكم في المسافة من اليسار */
+  transform: translate(100%, 6%); /* لضمان المحاذاة المثالية */
+}
+ .aboutus-btn {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: rgb(0, 0, 0);
+  --btn-bg-2: rgb(13, 67, 155);
+  --btn-bg-color: rgb(255, 255, 255);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 1em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow:
+    0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.aboutus-btn:hover {
+  background-position: right top;
+}
+
+.aboutus-btn:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow:
+    0 0 3px var(--btn-bg-color),
+    0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aboutus-btn {
+    transition: linear;
+  }
+}
+body {
+  position: relative; /* ضمان التحكم في موقع العناصر */
+  min-height: 100vh; /* لضمان تغطية الصفحة بالكامل */
+  margin: 0; /* إزالة أي مسافات افتراضية */
+  background-color: #f4f4f4; /* لون الخلفية (اختياري) */
+}
+.aboutus-btn {
+  position: absolute;
+  top: var(--btn-top, 17px); /* تحكم في المسافة من الأعلى */
+  left: var(--btn-left,16.5cm); /* تحكم في المسافة من اليسار */
+  transform: translate(100%, 6%); /* لضمان المحاذاة المثالية */
+}
+
+ .searchforexpert-btn {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: rgb(0, 0, 0);
+  --btn-bg-2: rgb(13, 67, 155);
+  --btn-bg-color: rgb(255, 255, 255);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 1em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow:
+    0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.searchforexpert-btn:hover {
+  background-position: right top;
+}
+
+.searchforexpert-btn:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow:
+    0 0 3px var(--btn-bg-color),
+    0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .searchforexpert-btn {
+    transition: linear;
+  }
+}
+body {
+  position: relative; /* ضمان التحكم في موقع العناصر */
+  min-height: 100vh; /* لضمان تغطية الصفحة بالكامل */
+  margin: 0; /* إزالة أي مسافات افتراضية */
+  background-color: #f4f4f4; /* لون الخلفية (اختياري) */
+}
+.searchforexpert-btn {
+  position: absolute;
+  top: var(--btn-top, 17px); /* تحكم في المسافة من الأعلى */
+  left: var(--btn-left,6cm); /* تحكم في المسافة من اليسار */
+  transform: translate(100%, 6%); /* لضمان المحاذاة المثالية */
+}
+
+
+
+
+
+
+
+
+body {
+    position: relative; /* ضمان التحكم في موقع العناصر */
+    min-height: 100vh; /* لضمان تغطية الصفحة بالكامل */
+    margin: 0; /* إزالة أي مسافات افتراضية */
+    background-color: #f4f4f4; /* لون الخلفية (اختياري) */
+  }
+  
+  .btn-donate {
+    position: absolute;
+    top: 20px; /* المسافة من الأعلى */
+    left: 20px; /* المسافة من اليسار */
+  }
+  
+    
+/* From Uiverse.io by Allyhere */ 
+.btn-donate {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 1em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+      325deg,
+      var(--btn-bg-2) 0%,
+      var(--btn-bg-1) 55%,
+      var(--btn-bg-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow:
+      0px 0px 20px rgba(71, 184, 255, 0.5),
+      0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+      inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+      inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .btn-donate:hover {
+    background-position: right top;
+  }
+  
+  .btn-donate:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow:
+      0 0 3px var(--btn-bg-color),
+      0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn-donate {
+      transition: linear;
+    }
+  }
+  /*اwwwww*/
+  body {
+    position: relative; /* ضمان التحكم في موقع العناصر */
+    min-height: 100vh; /* لضمان تغطية الصفحة بالكامل */
+    margin: 0; /* إزالة أي مسافات افتراضية */
+    background-color: #f4f4f4; /* لون الخلفية (اختياري) */
+  }
+  
+  .btn-donatelogin {
+    position: absolute;
+    top: var(--btn-top, 17px); /* تحكم في المسافة من الأعلى */
+    left: var(--btn-left, 35px); /* تحكم في المسافة من اليسار */
+    transform: translate(100%, 6%); /* لضمان المحاذاة المثالية */
+  }
+  
+  
+/* From Uiverse.io by Allyhere */ 
+.btn-donatelogin {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 1em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+      325deg,
+      var(--btn-bg-2) 0%,
+      var(--btn-bg-1) 55%,
+      var(--btn-bg-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow:
+      0px 0px 20px rgba(71, 184, 255, 0.5),
+      0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+      inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+      inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .btn-donatelogin:hover {
+    background-position: right top;
+  }
+  
+  .btn-donatelogin:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow:
+      0 0 0 3px var(--btn-bg-color),
+      0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn-donatelogin {
+      transition: linear;
+    }
+  }
+  
+
+
+ 
+ .statistecs-btn {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: rgb(0, 0, 0);
+  --btn-bg-2: rgb(13, 67, 155);
+  --btn-bg-color: rgb(255, 255, 255);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 1em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow:
+    0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.statistecs-btn:hover {
+  background-position: right top;
+}
+
+.statistecs-btn:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow:
+    0 0 3px var(--btn-bg-color),
+    0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .statistecs-btn {
+    transition: linear;
+  }
+}
+body {
+  position: relative; /* ضمان التحكم في موقع العناصر */
+  min-height: 100vh; /* لضمان تغطية الصفحة بالكامل */
+  margin: 0; /* إزالة أي مسافات افتراضية */
+  background-color: #f4f4f4; /* لون الخلفية (اختياري) */
+}
+.statistecs-btn {
+  position: absolute;
+  top: var(--btn-top, 17px); /* تحكم في المسافة من الأعلى */
+  left: var(--btn-left,12cm); /* تحكم في المسافة من اليسار */
+  transform: translate(100%, 6%); /* لضمان المحاذاة المثالية */
+}

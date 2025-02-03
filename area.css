@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.category {
+    background-color: #2c2c2c;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category:hover {
+    background-color: #444;
+}
+style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 20px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 px 5px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card .content {
+            padding: 15px;
+        }
+
+        .card .content h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .card .content .tags {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .tag.primary {
+            background-color: #6a5acd;
+        }
+
+        .status {
+            color: #00ff00;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .details {
+            font-size: 14px;
+            color: #aaa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .details .icon {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .details .icon img {
+            width: 16px;
+            height: 16px;
+        }
+        
+style>
+      
+        body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #121212;
+                color: #fff;
+                display: flex;
+                justify-content: flex-start; /* يغير موقع البطاقة أفقيًا */
+                align-items: flex-start; /* يغير موقع البطاقة رأسيًا */
+                height: 100vh;
+                padding: 20px; /* إضافة فراغ حول الصفحة */
+            }
+            
+        
+
+        .card1 {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .card1:hover {
+            transform: scale(1.05);
+        }
+
+        .card1 img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card1 .content1 {
+            padding: 15px;
+        }
+
+        .card1 .content1 h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .card1 .content1 .tags1 {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .tag1 {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .tag1.primary1 {
+            background-color: #6a5acd;
+        }
+
+        .status1 {
+            color: #00ff00;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .details1 {
+            font-size: 14px;
+            color: #aaa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .details1 .icon1 {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .details1 .icon1 img {
+            width: 16px;
+            height: 16px;
+        }
+        

@@ -1,0 +1,325 @@
+body {
+    --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: rgb(0, 0, 0);
+  --btn-bg-2: rgb(13, 67, 155);
+  --btn-bg-color: rgb(255, 255, 255);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 1em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow:
+    0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+h3 {
+    color: #ffffff;
+    margin-bottom: 70px;
+}
+
+.faq-section {
+    padding: 20px;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.faq-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+    background-color: #cecece;
+}
+
+footer {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(0, 0, 0);
+    --btn-bg-2: rgb(13, 67, 155);
+    --btn-bg-color: rgb(255, 255, 255);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 1em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+      325deg,
+      var(--btn-bg-2) 0%,
+      var(--btn-bg-1) 55%,
+      var(--btn-bg-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow:
+      0px 0px 20px rgba(71, 184, 255, 0.5),
+      0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+      inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+      inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+/* From Uiverse.io by ubaidi10 */ 
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #25d366;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.card {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(0, 0, 0);
+    --btn-bg-2: rgb(13, 67, 155);
+    --btn-bg-color: rgb(255, 255, 255);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 1em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+      325deg,
+      var(--btn-bg-2) 0%,
+      var(--btn-bg-1) 55%,
+      var(--btn-bg-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow:
+      0px 0px 20px rgba(71, 184, 255, 0.5),
+      0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+      inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+      inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;  /* تقليل الحواف */
+    gap: 10px;  /* تقليل المسافة بين العناصر */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.055);  /* تقليل الظل */
+  }
+  
+  /* for all social containers */
+  .socialContainer {
+    width: 40px;  /* تقليل العرض */
+    height: 40px;  /* تقليل الارتفاع */
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+  }
+  
+  /* Instagram */
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+    transform: scale(1.2);  /* تقليل حجم التكبير */
+    border-radius: 10px;  /* تقليل التدوير */
+  }
+  
+  /* Twitter */
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 0.3s;
+    transform: scale(1.2);  /* تقليل حجم التكبير */
+    border-radius: 10px;  /* تقليل التدوير */
+  }
+  
+  /* LinkedIn */
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+    transform: scale(1.2);  /* تقليل حجم التكبير */
+    border-radius: 10px;  /* تقليل التدوير */
+  }
+  
+  /* WhatsApp */
+  .containerFour:hover {
+    background-color: #25d366;
+    transition-duration: 0.3s;
+    transform: scale(1.2);  /* تقليل حجم التكبير */
+    border-radius: 10px;  /* تقليل التدوير */
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.85);  /* تقليل حجم الضغط */
+    transition-duration: 0.3s;
+  }
+  
+  .socialSvg {
+    width: 12px;  /* تقليل حجم الأيقونة */
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.newsletter {
+    text-align: right;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #2040e4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #138496;
+}
+
+.social-links ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+.social-links li {
+    font-size: 24px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #000000;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: hsl(0, 0%, 0%);
+}

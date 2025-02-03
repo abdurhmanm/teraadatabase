@@ -1,0 +1,83 @@
+/* التصميم العام للنموذج */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: white;
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: rgb(0, 0, 0);
+  --btn-bg-2: rgb(13, 67, 155);
+  --btn-bg-color: rgb(255, 255, 255);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 1em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.send-icon {
+    width: 20px;
+    margin-right: 10px;
+}

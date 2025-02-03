@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج مع أيقونة الإرسال</title>
+    <link rel="stylesheet" href="communication.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="name">الاسم *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">البريد الإلكتروني *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="issue">نوع المشكلة *</label>
+                <select id="issue" name="issue" required>
+                    <option value="">اختر نوع المشكلة</option>
+                    <option value="technical">مشكلة تقنية</option>
+                    <option value="account">حساب</option>
+                    <option value="other">أخرى</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="description">الوصف *</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+                <span>إرسال</span>
+                
+            </button>
+        </form>
+    </div>
+</body>
+</html>
